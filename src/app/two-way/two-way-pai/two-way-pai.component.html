@@ -1,0 +1,10 @@
+<p>two-way Counter</p>
+
+<h2 for="">Valor = <input type="text" [(ngModel)]="value"></h2>
+
+
+<div>
+    <app-two-way-filho [value] = "value" (valueChangeEvent)="value = $event"></app-two-way-filho>
+ 
+</div>
+

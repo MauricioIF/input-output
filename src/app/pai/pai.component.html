@@ -1,0 +1,14 @@
+<div>
+    <app-filho (addToCartEvent)="addToCart($event)" ></app-filho>
+
+    <div>
+        <h2>Carrinho de compras</h2>
+        <div>
+            @for (product of products; track $index) {
+            <p> {{ $index + ". " + product}}</p>
+            }
+        </div>
+    </div>
+
+
+</div>
